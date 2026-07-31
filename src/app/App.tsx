@@ -21,7 +21,7 @@ import {
   Upload,
   ArrowUpRight,
 } from "lucide-react";
-
+import logo from "../assets/logo.png";
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 type Page = "listings" | "register";
@@ -609,7 +609,7 @@ function Sidebar({ page, onPageChange }: { page: Page; onPageChange: (p: Page) =
     <aside className="w-60 shrink-0 bg-sidebar border-r border-sidebar-border flex flex-col h-screen sticky top-0">
       {/* Logo */}
       <div className="px-5 py-6 border-b border-sidebar-border">
-        <img src="/src/assets/logo.png" alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
 
       {/* Nav */}
